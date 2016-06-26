@@ -2,11 +2,10 @@ package com.eli.jms;
 
 import java.lang.reflect.Field;
 
-public class PUtil {
+public final class PUtil {
 	private PUtil() {}
 	
     public static String getStackTrace(Throwable source) {
-        // work in jdk >= 1.4
         StringBuffer target = new StringBuffer(source.getMessage() != null ? source.getMessage() : "null\n");
         String lineSeparator = System.getProperty("line.separator");
         StackTraceElement[] ste = source.getStackTrace();
