@@ -26,6 +26,7 @@ public class JmsProducer {
 	
 	// Initiate JMS and Queue once
 	private JmsProducer() {
+
 		try {
 			InitialContext initCtx = new InitialContext();
 	        log4j.log(Level.INFO, "Initial Context created");
